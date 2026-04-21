@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Article</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>AI Tools for Students</h1>
+  <p>Read helpful articles</p>
+</header>
+
+<div id="article-container" style="padding:20px;"></div>
+
+<script>
+  // Get the article "slug" from the URL
+  const params = new URLSearchParams(window.location.search);
+  const slug = params.get("slug");
+
+  // Load articles from JSON
+  fetch("articles.json")
+    .then(res => res.json())
+    .then(data => {
+
+      // Find the article that matches the slug
+      const article = data.find(a => a.slug === slug);
+
+      const container = document.getElementById("article-container");
+
+      if (!article) {
+        container.innerHTML = "<h2>Article not found</h2>";
+        return;
+      }
+
+      container.innerHTML = `
+        <h1>${article.title}</h1>
+        <p>${article.content}</p>
+      `;
+    });
+</script>
+
+</body>
+</html>

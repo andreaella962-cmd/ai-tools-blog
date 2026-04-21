@@ -1,0 +1,10 @@
+[
+  {
+    "title": "Best AI Tools for Homework (2026)",
+    "description": "Discover the best AI tools to complete homework faster."
+  },
+  {
+    "title": "AI Tools to Make Money as a Student",
+    "description": "Learn how students can earn using AI tools."
+  }
+]

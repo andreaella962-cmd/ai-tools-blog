@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Tools for Students</title>
+  <meta name="description" content="Best AI tools for students to study and make money online">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>AI Tools for Students</h1>
+  <p>Study smarter & make money with AI</p>
+</header>
+
+<section id="articles"></section>
+
+<script src="app.js"></script>
+</body>
+</html>
